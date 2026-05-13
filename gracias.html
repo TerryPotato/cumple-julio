@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARRAKIS CALLING — Confirmado</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Hanken+Grotesk:wght@300;400&family=Geist:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'bg':        '#131313',
+            'gold':      '#ffbe79',
+            'ink':       '#e5e2e1',
+            'ink-muted': '#d5c3b4',
+          },
+          fontFamily: {
+            'display': ['Space Grotesk', 'sans-serif'],
+            'sans':    ['Hanken Grotesk', 'sans-serif'],
+            'mono':    ['Geist', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      pointer-events: none;
+      background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOS4Abs24VoVNwB0_EzM0WIA63FF_WBHb9Vifqjt3Wmc8rr-HgssUVxxp8onm3DDvd9wvr_mPelp3LR7U9x2SdaHbxVNDyrzdwFXAqPz-M6xLHXnON5pSeWVPlneZ0fYzy7DBuat83q4Ahwu9WbfdGpgQbo6lKQ9fIWCGZke7TJQYUSI-PBI39xBMFAcic5fsRoeakX1_2zWEd5U2BFxw15u4_wwom5fgIuPlPZSq411pwozmmqgkh0GfTNuf5foRIBfmEDmz4zFfI");
+      opacity: 0.1;
+    }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 40; }
+    .dust { height: 1px; background: linear-gradient(to right, transparent, rgba(255,190,121,.5) 50%, transparent); }
+  </style>
+</head>
+
+<body class="bg-bg text-ink min-h-screen flex flex-col items-center justify-center font-sans px-6">
+
+  <!-- Fondo: duna vertical como decoración sutil -->
+  <div class="fixed inset-0 z-0 pointer-events-none">
+    <img src="vertical%20duna.png" alt="" class="w-full h-full object-cover opacity-10">
+    <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col items-center gap-8 text-center max-w-md mx-auto">
+
+    <span class="material-symbols-outlined text-gold" style="font-size: 72px;">check_circle</span>
+
+    <div class="flex flex-col gap-3">
+      <p class="font-mono text-[10px] text-gold tracking-[0.5em] uppercase">Confirmado</p>
+      <h1 class="font-display font-light text-[28px] md:text-[38px] text-ink tracking-[0.3em] uppercase leading-tight">
+        Has Respondido<br>al Llamado
+      </h1>
+    </div>
+
+    <p class="font-sans text-[14px] md:text-[15px] text-ink-muted leading-relaxed tracking-[0.03em]">
+      Tu presencia ha sido registrada en los archivos de la Cofradía.<br>Prepárate para el Ritual.
+    </p>
+
+    <div class="dust w-16"></div>
+
+    <a href="index.html" class="font-mono text-[11px] text-gold border-b border-gold/50 pb-0.5 tracking-[0.3em] uppercase hover:opacity-70 transition-opacity">
+      ← Volver a la Invitación
+    </a>
+
+  </div>
+</body>
+</html>

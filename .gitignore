@@ -1,0 +1,20 @@
+# ── Información privada ──────────────────
+Nuevo Text Document.txt
+
+# ── Archivos de respaldo ─────────────────
+desktop_original.html
+
+# ── Sistema operativo ────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── Editores ─────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Claude Code ──────────────────────────
+.claude/
